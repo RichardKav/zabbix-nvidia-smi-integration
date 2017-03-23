@@ -15,3 +15,5 @@ UserParameter=gpu.power,nvidia-smi --query-gpu=power.draw --format=csv,noheader,
 
 
 The following code was developed from https://gist.github.com/bhcopeland/b54d3c678a0cb6e87119 and further refined to avoid the need to directly parse output from nvidia smi with grep and cut.
+
+Alonside the template monitorgraphics.sh is an alternative monitoring script that outputs nvidia-smi information to disk. This is not needed for the Zabbix template but it remains useful for monitoring NVidia GPUs.
